@@ -1,0 +1,13 @@
+body {
+    color: var(--title);
+    background-color: var(--main-bg);
+
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    &.no-scroll {
+            overflow: hidden;
+        }
+}

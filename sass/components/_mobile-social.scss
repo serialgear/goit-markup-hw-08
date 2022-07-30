@@ -1,0 +1,30 @@
+
+
+.header__social-list {
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    @media screen and (min-width: 768px){
+        display: none;
+    }
+       
+}
+
+.header__social-link {
+    @include fonts (var(--brand-color), $lh: 1.22, $trans: none);
+
+    display: block;
+    font-size: 18px;
+    padding-right: 10px;
+    
+    .header__social-item:not(:last-child) & {
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+
+    .header__social-item:not(:first-child) & {
+        padding-left: 10px;
+    }
+
+}

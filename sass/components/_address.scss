@@ -1,0 +1,44 @@
+.address {
+    margin-top: 20px;
+    
+        margin-left: auto;
+        margin-right: auto;
+        
+    &__city-link {
+        
+        color: var(--text-white);
+    }
+
+    &__mail-link,
+    &__tel-link {
+        color: var(--footer-contact);
+    }
+
+    &__item {
+        @media screen and (max-width:1199px) {
+            text-align: center;
+        }        
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 8px;
+        
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 9px;
+        }
+        
+    }
+}
+
+.address__link {
+    display: block;
+    font-style: normal;
+    transition: var(--link-transition-color);
+
+    &:hover,
+    &:focus {
+        color: var(--brand-color);
+    }
+}
+
+

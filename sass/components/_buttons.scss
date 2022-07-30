@@ -1,0 +1,20 @@
+.button {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.06em;
+	border: none;
+	border-radius: 4px;
+	color: var(--text-white);
+	background-color: var(--brand-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	transform: scale(1);
+	transition: transform 125ms var(--timing-function);
+	cursor: pointer;
+
+	&:hover,
+	&:focus {
+		background-color: var(--button-hover);
+		transform: scale(1.05);
+	}
+}

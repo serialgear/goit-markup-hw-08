@@ -1,0 +1,38 @@
+.works {
+
+  @media screen and (max-width: 1199px) {
+      display: none;
+  } 
+}
+
+.works {
+    @extend %section;
+
+    &__title {
+        @extend %title;
+
+        margin-bottom: 50px;
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__overlay {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+
+        background-color: var(--bg-works);
+    }
+
+    &__subtitle {
+        @extend %subtitle;
+
+        color: var(--text-white);
+    }
+}
