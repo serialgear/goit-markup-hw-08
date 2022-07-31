@@ -284,7 +284,7 @@ img {
     transition: var(--link-transition-color);
 }
 
-.contacts__icon-invelope {
+.contacts__icon-envelope {
     width: 16px;
     height: 12px;
 }

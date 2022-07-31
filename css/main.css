@@ -1368,6 +1368,7 @@ img {
   .contacts__link {
     padding-top: 5px;
     padding-bottom: 5px;
+    font-size: 12px;
     color: var(--text);
     font-weight: 500;
     line-height: 1.14;
@@ -1380,6 +1381,7 @@ img {
   .contacts__link {
     padding-top: 32px;
     padding-bottom: 32px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1407,22 +1409,34 @@ img {
     font-size: 34px;
   }
 }
-.contacts__icon-invelope {
-  width: 16px;
-  height: 12px;
+.contacts__icon-envelope {
+  width: 14px;
+  height: 10px;
 }
 @media screen and (max-width: 767px) {
-  .contacts__icon-invelope {
+  .contacts__icon-envelope {
     display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__icon-envelope {
+    width: 16px;
+    height: 12px;
   }
 }
 .contacts__icon-smartphone {
   width: 10px;
-  height: 16px;
+  height: 14px;
 }
 @media screen and (max-width: 767px) {
   .contacts__icon-smartphone {
     display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__icon-smartphone {
+    width: 10px;
+    height: 16px;
   }
 }
 .contacts__icon {
@@ -1534,7 +1548,7 @@ img {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 480px) {
   .skills__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1545,7 +1559,7 @@ img {
     gap: 30px;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .skills__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1599,6 +1613,12 @@ img {
   color: var(--text);
 }
 .skills__subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 10px;
 }
 
@@ -1923,11 +1943,10 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: rgba(33, 150, 243, 0.9);
 }
-@media screen and (min-width: 1200px) {
-  .cards-list__link:hover .cards-list__overlay {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
+
+.cards-list__link:hover .cards-list__overlay {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 
 .cards-list__txt-overlay {
